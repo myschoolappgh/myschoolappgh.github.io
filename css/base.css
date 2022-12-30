@@ -1,0 +1,301 @@
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-track {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: cornflowerblue;
+  border-radius: 20px;
+  width: 7px;
+}
+
+html{
+    font-family: calibri;
+}
+
+.appbar{
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    display: grid;
+    grid-template-columns: 20% 50%;
+    box-shadow: 0px 0px 11px 3px whitesmoke;
+    z-index: 2;
+}
+
+.appbar-mobile{
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    display: none;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0px 0px 11px 3px whitesmoke;
+    z-index: 2;
+}
+
+.appbar-mobile .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: calibri;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.appbar .title,
+.appbar-001 .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: calibri;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.appbar-001{
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    display: grid;
+    grid-template-columns: 20% 50%;
+    z-index: 2;
+}
+
+.appbar .nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: calibri;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.appbody{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 10%;
+    z-index: 1;
+}
+
+
+.btn-type-1{
+    padding: 16px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 19px;
+    background: blue;
+    color: white;
+}
+
+.features-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+
+
+.feature-card{
+    width: 17em;
+    height: 20em;
+    background: white;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 3px 3px 11px 3px whitesmoke;
+}
+
+.feature-card .title{
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card .footer{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card .footer a{
+     font-size: 18px;
+     font-weight: 600;
+     color: blue;
+}
+
+.feature-card .features ul{
+    font-size: 20px;
+    display: flex;   
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.feature-card .features ul li{
+    margin: 10px 0 0 0;
+    font-weight: 6;
+    font-size: 20px;
+}
+
+
+
+.hr001{
+    margin-right: 100px;
+    border-color: #f8f8ff42;
+}
+
+
+.apps-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3%;
+}
+
+.apps-div .app-cont{
+    width: 17em;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.apps-div .app-cont .icon{
+    font-size: 40px;
+}
+
+.apps-div .app-cont .title{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.rdm-btn{
+    width: 7em;
+    height: 3em;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background: cornflowerblue;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.f-img{
+    width: 60%; height: 40em;
+}
+
+
+.sec{
+    margin: 60px 0 0 60px;
+}
+
+
+
+.dit{
+    position: relative; float: right; text-align: right; width: 20em; margin: 0 50px 0 0;
+}
+
+
+
+.ul00{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.ul00 li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    height: 20em;
+}
+
+.ul00 li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: whitesmoke;
+    border-radius: 20px;
+    height: 14em;
+    width: 60%;
+}
+
+.ul00 li div .rdm-btn{
+    width: 6em;
+    height: 3em;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: white;
+    background: cornflowerblue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 688px) {
+      .f-img{
+        width: 100%; height: 16em;
+    }
+
+    .sec{
+        margin: 60px 0 0 0px;
+    }
+    .sec h3{
+        margin: 0px 0 0 20px;
+    }
+    .hr001{
+        margin-right: 0px;
+        border-color: #f8f8ff42;
+    }
+    .dit{
+        position: relative; float: left; text-align:left; width: 90%; margin: 0 50px 0 20px;
+    }
+    .appbar{display: none;}
+    .appbar-mobile{display: grid;
+    grid-template-columns: 50% 50%;}
+}
