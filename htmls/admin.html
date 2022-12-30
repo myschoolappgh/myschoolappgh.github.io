@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../css/base.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	</head>
-	<body onload="processOne()">
+	<body>
 		<div class="appbar-mobile">
 			<div class="title">Myschool - Admin App</div>
 		</div>
@@ -57,7 +57,6 @@ ul_data = [
 		{head:"Library Management", more:"Bla Bla Bla", img:"../imgs/llb.jpg"},
 		{head:"School Bus Tracker", more:"Bla Bla Bla", img:"../imgs/bus.jpg"},
 ]
-function processOne(){
 	dyul = document.getElementById('ul01')
 
 	for(data=0; data < ul_data.length; data++) {
@@ -83,7 +82,6 @@ function processOne(){
 		ul_li.appendChild(ul_li_div)
 		dyul.appendChild(ul_li)
 	}
-}
 
 </script>
 </html>
