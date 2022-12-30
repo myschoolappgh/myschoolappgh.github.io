@@ -263,6 +263,13 @@ html{
 }
 
 
+.ul00 li div h3{
+    text-align: center !important;
+    margin: 0 0 0 0 !important;
+}
+
+
+
 
 .ul00 li div img{
     width: 100%;
@@ -311,4 +318,10 @@ html{
         width: 90%;
         gap: 20px;
     }
+    
+    .ul00 li div h3{
+        text-align: center !important;
+        margin: 0 0 0 0 !important;
+    }
+
 }
