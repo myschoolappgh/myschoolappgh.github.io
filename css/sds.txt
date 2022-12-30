@@ -1,0 +1,45 @@
+<li><div>
+						<h3>Message Broadcast</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Announcement System</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Event Planer</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Student Management</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Staff Management</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Student Performance Analysis</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Teacher Performance Analysis</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Time table Management</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Class and Clubs Management</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>Library Management</h3>
+						<button class="rdm-btn">Read more</button>
+					</div></li>
+					<li><div>
+						<h3>School Bus Tracker</h3>
+						<button class="rdm-btn">Read more</button></div></li>
+					<li><div><h3>Auto-generated Academic Year Report</h3>
+					<button class="rdm-btn">Read more</button></div></li>

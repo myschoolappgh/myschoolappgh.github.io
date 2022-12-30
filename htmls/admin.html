@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="../css/base.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	</head>
-	<body>
+	<body onload="processOne()">
 		<div class="appbar-mobile">
 			<div class="title">Myschool - Admin App</div>
 		</div>
@@ -24,56 +24,8 @@
 			<div  class="sec">
 				<h3>Features and Tools</h3>
 				<hr class="hr001"><br>
-				<ul class="ul00">
-					<li><div>
-						<h3>Attendence Management & Analysis</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Message Broadcast</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Announcement System</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Event Planer</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Student Management</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Staff Management</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Student Performance Analysis</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Teacher Performance Analysis</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Time table Management</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Class and Clubs Management</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>Library Management</h3>
-						<button class="rdm-btn">Read more</button>
-					</div></li>
-					<li><div>
-						<h3>School Bus Tracker</h3>
-						<button class="rdm-btn">Read more</button></div></li>
-					<li><div><h3>Auto-generated Academic Year Report</h3>
-					<button class="rdm-btn">Read more</button></div></li>
+				<ul class="ul00" id="ul01">
+					
 				</ul>
 			</div>
 			
@@ -86,4 +38,52 @@
 		</div>
 
 	</body>
+
+
+
+<script type="text/javascript">
+
+ul_data = [
+		{head:"Attendence Management & Analysis", more:"Bla Bla Bla", img:"../imgs/att.webp"},
+		{head:"Message Broadcast", more:"Bla Bla Bla", img:"../imgs/msg.jpg"},
+		{head:"Announcement System", more:"Bla Bla Bla", img:"../imgs/ann.jpg"},
+		{head:"Event Planer", more:"Bla Bla Bla", img:"../imgs/evp.jpg"},
+		{head:"Student Management", more:"Bla Bla Bla", img:"../imgs/stu.jpg"},
+		{head:"Staff Management", more:"Bla Bla Bla", img:"../imgs/staf.jpg"},
+		{head:"Student Performance Analysis", more:"Bla Bla Bla", img:"../imgs/spa.jpg"},
+		{head:"Teacher Performance Analysis", more:"Bla Bla Bla", img:"../imgs/tpa.jpg"},
+		{head:"Time table Management", more:"Bla Bla Bla", img:"../imgs/tit.jpg"},
+		{head:"Class and Clubs Management", more:"Bla Bla Bla", img:"../imgs/ccm.jpg"},
+		{head:"Library Management", more:"Bla Bla Bla", img:"../imgs/llb.jpg"},
+		{head:"School Bus Tracker", more:"Bla Bla Bla", img:"../imgs/bus.jpg"},
+]
+function processOne(){
+	dyul = document.getElementById('ul01')
+
+	for(data=0; data < ul_data.length; data++) {
+		var ul_li = document.createElement("li");
+		var ul_li_div = document.createElement("div");
+		var div_img = document.createElement("img");
+		var div_h3 = document.createElement("h3");
+		var div_btn = document.createElement("button");
+		var b_div = document.createElement("div");
+
+		div_h3.textContent = ul_data[data].head
+		div_img.src = ul_data[data].img
+		div_btn.textContent = "Read more"
+
+		div_btn.classList.add('rdm-btn');
+		b_div.classList.add('bs20');
+
+		ul_li_div.appendChild(div_img)
+		ul_li_div.appendChild(div_h3)
+		ul_li_div.appendChild(div_btn)
+		ul_li_div.appendChild(b_div)
+
+		ul_li.appendChild(ul_li_div)
+		dyul.appendChild(ul_li)
+	}
+}
+
+</script>
 </html>

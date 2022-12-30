@@ -215,6 +215,7 @@ html{
     background: cornflowerblue;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -240,6 +241,7 @@ html{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    row-gap: 100px;
 }
 
 .ul00 li{
@@ -248,7 +250,6 @@ html{
     justify-content: center;
     flex-direction: column;
     background: white;
-    height: 20em;
 }
 
 .ul00 li div{
@@ -258,23 +259,21 @@ html{
     flex-direction: column;
     background: whitesmoke;
     border-radius: 20px;
-    height: 14em;
     width: 60%;
 }
 
-.ul00 li div .rdm-btn{
-    width: 6em;
-    height: 3em;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 400;
-    color: white;
-    background: cornflowerblue;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
+
+
+.ul00 li div img{
+    width: 100%;
 }
 
+
+
+.bs20{
+    width: 100%;
+    height: 20px;
+}
 
 
 @media (max-width: 688px) {
@@ -297,5 +296,19 @@ html{
     }
     .appbar{display: none;}
     .appbar-mobile{display: grid;
-    grid-template-columns: 50% 50%;}
+    grid-template-columns: 70% 30%;}
+
+
+    .ul00{
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 0 0 0 -9%;
+    }
+
+    .ul00 li div{
+        width: 90%;
+        gap: 20px;
+    }
 }
